@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+  double a,b,c,i,area;
+  int n;
+  a = 100; //changing base
+  b = 30; //height
+  i = 0; //cycles
+  area = 0;
+  printf("Input number of triangles desired for the nautilus");
+  scanf("%d",&n);
+
+  while(i <= n){
+    i++; //loop cycle
+    a = sqrt(a*a + b*b);
+    area = area + (1/2)*a*c;
+      
+  }
+
+  printf("The total area is %f", area);
+}

@@ -1,0 +1,30 @@
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+  double x,i,result;
+  int n;
+  i = 0; //cycle
+  result= 1; //starting point
+  printf("What number do you desire to power up and to what integer number \n");
+  scanf("%lf %d", &x, &n);
+
+  if(n >= 0){
+    while(i < n){
+      i++; //cycle
+      result = result * x;
+    }
+  } else{
+    while(i > n){
+      i= i - 1; //cycle
+      result = result / x;
+  }
+  }
+  if(x == 0){
+    printf("undefined \n");
+  } else{printf("%2.f power up to %d is %f \n", x,n,result);}
+}
+

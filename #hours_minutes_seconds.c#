@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main(){
+  int  hours, minutes;
+  double seconds;
+  printf("Input seconds \n");
+  scanf("%lf", &seconds);
+  floor(seconds);
+  
+  if(seconds >= 3600){
+    hours =(int)seconds / 3600;
+    seconds =(int)seconds - hours * 3600;
+    if(hours > 1){
+     printf("%d hours ", hours);
+    } else{
+	printf("%d hour ", hours);
+      }
+  }
+
+  if(seconds >= 60){
+    minutes =(int) seconds / 60;
+    seconds = (int)seconds - minutes * 60;
+  if(minutes > 1){
+     printf("%d minutes ", minutes);
+    } else{
+	printf("%d minute ", minutes);
+      }
+66y7u65  }
+  if(seconds > 1){
+    printf("%0.lf seconds \n", seconds);
+      } else if (seconds == 1){
+    printf("%0.lf second \n", seconds);
+  }
+  return 0;
+};
